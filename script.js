@@ -1,9 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     function initMap() {
-        const centro = {lat: -12.046374, lng: -77.042793};
         const map = new google.maps.Map(document.getElementById("map"), {
             zoom: 14,
-            center: centro,
+            center: {lat: -12.046374, lng: -77.042793},
         });
 
         const restaurantes = [
