@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YummyExplorer - Descubre dónde comer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>YummyExplorer</h1>
+        <nav>
+            <a href="#mapa">Mapa</a>
+            <a href="ofertas">Ofertas</a>
+            <a href="#contacto">Contáctanos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="mapa">
+            <h2>Descubre restaurantes cerca de ti</h2>
+            <div id="map"></div>
+        </section>
+
+        <section id="ofertas">
+            <h2>Ofertas del día</h2>
+            <div id="ofertas-lista">
+
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Haz tu pedido o reserva</h2>
+            <form id="form-pedido">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="tel" name="telefono" placeholder="Teléfono" required>
+                <textarea name="pedido" placeholder="Detalles del pedido" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 YummyExplorer - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxlrg5GFpAPmoU9fHDgoyuczwzAxfhdkw&callback=initMap" async defer></script>
+</body>
+</html>
